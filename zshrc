@@ -25,6 +25,8 @@ alias ..='cd ..'
 export CLICOLOR=1
 export HISTCONTROL=ignoreboth
 export TERM=xterm-256color
+export PATH="$HOME/.fzf/bin:$PATH"
+
 
 command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
 command -v fzf >/dev/null 2>&1 && source <(fzf --zsh)
